@@ -1,0 +1,69 @@
+/* imports */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Junge&family=Lora:ital@1&family=Montserrat:ital,wght@0,900;1,900&display=swap");
+
+/* -------------------- */
+/*   Custom Properties  */
+/* -------------------- */
+
+:root {
+  /* colors */
+  --color-primary: #0059ff;
+  --color-primary-dark: #0044c2;
+  --color-secondary: #f4f4f4;
+  --color-white: #ffffff;
+  --color-red-200: #ffc3c3;
+  --color-red-prime: #ef4444;
+  --color-black: #0f0f0f;
+  --color-background-black: #202020;
+  --color-background-blue: hsl(214, 92%, 90%);
+  --color-background-red: #ffeded;
+
+  /* fonts */
+  --font-display: "Montserrat", sans-serif;
+  --font-heading: sans-serif;
+  --font-subtitle: "Lora", serif;
+  --font-body: "Junge", serif;
+}
+
+/* Box sizing */
+*::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset Margins */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* overflow-y: hidden; */
+}
+body::-webkit-scrollbar {
+  display: none;
+}

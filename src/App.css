@@ -1,0 +1,238 @@
+.app {
+  /* padding-top: 10vh; */
+}
+.home {
+  /* background-color: #b3cdff; */
+  height: 200vh;
+  /* background-image: url("../public/Images/ProfilePicture.jpg"); */
+  background-size: contain;
+}
+
+/* blurred background  */
+.frosted-glass {
+  background: hsla(0, 0%, 100%, 0.7);
+  backdrop-filter: blur(6px);
+}
+.shodow{
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.frosted-glass:hover {
+  background: hsla(0, 0%, 100%, 1);
+}
+
+.hero {
+  min-height: 100vh;
+  max-width: 100%;
+  background-image: url("../public/Images/heroBackdrop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0 0 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-end;
+  padding-inline: 20px;
+  padding-bottom: 20px;
+}
+
+.xxl-h1 {
+  font-family: var(--font-display);
+  font-size: 12vw;
+  font-weight: 700;
+  line-height: 0.8;
+  color: var(--color-white);
+  margin-bottom: 3vw;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.p-hero {
+  color: #f4f4f4;
+  font-family: var(--font-subtitle);
+  font-size: 1.25rem;
+  font-weight: 400;
+  max-width: 80%;
+}
+
+p {
+  color: var(--color-black);
+  font-family: var(--font-subtitle);
+  font-size: 1.25rem;
+  font-weight: 400;
+  /* background-color: aqua; */
+  max-width: 80%;
+}
+
+.margin-top-2 {
+  margin-top: 1vw;
+}
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
+/* ----------- */
+/* buttons */
+/*  ----------*/
+
+.btn-pair {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.btn-prime,
+.btn-second {
+  background-color: #ffffff;
+  border: 0px solid #ffffff;
+  min-width: 13rem;
+  height: 3rem;
+  color: #000000;
+  font-size: small;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 2rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn-prime {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.btn-second {
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+}
+.btn-prime:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+.btn-second:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.essayShort {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  height: min-content;
+  width: 100vw;
+  justify-content: center;
+  min-height: 90vh;
+  max-height: fit-content;
+  padding: 1vh;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 50%;
+  max-width: 100%;
+  padding: 20px;
+}
+.pre-heading {
+  font-family: var(--font-body);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-black);
+}
+.h1 {
+  font-family: sans-serif;
+  font-size: 6rem;
+  font-weight: 400;
+  color: var(--color-black);
+}
+.h2 {
+  font-family: sans-serif;
+  font-size: 4vw;
+  font-weight: 400;
+  color: var(--color-black);
+}
+.h3 {
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-black);
+}
+.illus-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 20px;
+}
+.illus-box div {
+  /* height: 29vw; */
+  width: 100vw;
+  display: flex;
+  justify-content: right;
+}
+.illus-box div img {
+  width: 100vw;
+  /* height: 70vh; */
+  object-fit: cover;
+}
+.shopping-short {
+  background-color: var(--color-background-red);
+  border-radius: 30px;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+.shopping-short .content-box {
+  align-items: flex-end;
+}
+.shopping-short button,
+.essayShort button {
+  border: 3px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.shopping-short button:hover,
+.essayShort button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.about-us-short {
+  padding: 70px 30px 70px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-pair {
+    flex-direction: row;
+  }
+  .essayShort {
+    flex-direction: row;
+    height: min-content;
+    width: 100%;
+    justify-content: center;
+    min-height: 90vh;
+    padding: 1vh;
+  }
+  .content-box {
+    width: max-content;
+    height: 100%;
+  }
+  .illus-box {
+  }
+
+  .illus-box div {
+    height: 29vw;
+    width: 50vw;
+  }
+  .illus-box div img {
+    width: 80vw;
+    height: 70vh;
+  }
+}

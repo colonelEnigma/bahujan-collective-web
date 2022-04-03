@@ -1,0 +1,74 @@
+.art-fullscreen-mobile{
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: aquamarine;
+}
+.art-stream-fullscreen{
+
+}
+.art-image{
+    width: 100vw;
+}
+.art-image img{
+    width: 100%;
+}
+.art-test{
+    width: 100vw;
+    height: 50vw;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.artist-container{
+    
+    display: flex;
+    align-items: center;
+}
+
+.art-short-desc{}
+.art-title-bar-m{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.art-title-m{
+
+}
+
+.art-title-m-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    padding-inline: 13px;
+    border-radius: 20px;
+    background-color: white;
+}
+.art-title-m-btn button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.art-short-desc-containt{
+    display: block;
+    padding: 0px 10px 5px;
+    max-width: 100%;
+}
+.btn-icon-m{
+    height: 20px;
+    width: 20px;
+}
+.art-detail-m {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    margin: inline 5px;;
+    width: 90%;
+    background-color: white;
+    height: 50px;
+
+}
