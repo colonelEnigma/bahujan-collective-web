@@ -1,12 +1,33 @@
 import "./signup.css";
 import { AiOutlineForm, AiOutlineArrowDown } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 const SignUp = () => {
+  const [gender, setGender] = useState("Choose Gender");
+  const [fileurl, setFileurl] = useState("");
+
+  const [file, setFile] = useState("");
+  const handleFile = (e) => {
+    setFileurl(URL.createObjectURL(e.target.files[0]));
+    setFile(e.target.files[0]);
+    setFile(e.target.files[0]);
+  };
+  const handleGender = (e) => {
+    setGender(e.target.value);
+  };
   return (
     <div className="login">
-      <div className=" art-selected ">
+      <div
+        className=" art-selected "
+        style={file ? { backgroundImage: `url("${fileurl}")` } : {}}
+      >
         <div className="pick-file-div align-file-picker">
-          <input type="file" id="file-input" className="file " />
+          <input
+            type="file"
+            id="file-input"
+            className="file"
+            onChange={handleFile}
+          />
           <label
             htmlFor="file-input"
             className="file-icon-container align-file-picker-icon"
@@ -39,7 +60,7 @@ const SignUp = () => {
         />
         <div className="category-container">
           <div className="category-section form-input">
-            <div>Gender</div>
+            <div>{gender}</div>
             <AiOutlineArrowDown className="category-icon" />
           </div>
 
@@ -49,10 +70,11 @@ const SignUp = () => {
             id="category"
             placeholder="Add Art Title"
             name="ArtTitle"
+            onChange={handleGender}
           >
-            <option value="">Male</option>
-            <option value="">Female</option>
-            <option value="">Non-Binary</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Non-Binary">Non-Binary</option>
           </select>
         </div>
         <input
