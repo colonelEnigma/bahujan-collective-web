@@ -7,6 +7,8 @@
   height: 100%;
   display: flex;
   background-image: url("../../public/Images/art\ 8.jpg");
+  background-size: cover;
+  background-position: center;
   height: 50vh;
   background-size: cover;
   border-radius: 0px 0px 20px 20px;
@@ -241,6 +243,7 @@
   }
   .art-selected {
     flex-direction: row;
+    border-radius: 0px 20px 20px 0px;
 
     height: 100%;
   }

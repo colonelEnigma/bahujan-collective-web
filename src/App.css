@@ -20,6 +20,15 @@
 .frosted-glass:hover {
   background: hsla(0, 0%, 100%, 1);
 }
+.t-align-r{
+  text-align: right;
+}
+.t-align-c{
+  text-align: center;
+}
+.t-align-l{
+  text-align: left;
+}
 
 .hero {
   min-height: 100vh;

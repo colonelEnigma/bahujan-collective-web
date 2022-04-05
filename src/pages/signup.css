@@ -52,7 +52,7 @@ align-items: flex-end;
 }
 .align-file-picker-icon{
     border-radius: 6px 6px 0px 0px;
-  transform: translateY(0%);
+    transform: translateY(0%);
 }
 @media screen and (min-width: 768px) {
     .login{
@@ -90,8 +90,8 @@ align-items: flex-end;
         color: var(--color-back);
     }
     .input-category option{
-         color: var(--color-black);
-         background-color: white;
+        color: var(--color-black);
+        background-color: white;
     }
     .signup-name{
         flex-direction: row;
@@ -106,5 +106,9 @@ align-items: flex-end;
     .align-file-picker{
         justify-content: flex-end;
         align-items: center;
+        
+    }
+    .align-file-picker-icon{
+        border-radius: 6px 0px 0px 6px;
     }
 }
