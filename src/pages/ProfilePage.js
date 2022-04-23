@@ -2,41 +2,8 @@ import "./signup.css";
 import { AiOutlineForm, AiOutlineArrowDown } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-// set correct fields
 
-const FieldOptions = {
-  artist: "optional",
-  writer: "optional",
-  username: "ness",
-  Email: "",
-  Gender: [
-    "Man",
-    "Woman",
-    "Transgender",
-    "Non-Binary/non-conforming",
-    "Prefer not to respond",
-  ],
-  CasteLocation: [
-    "SC",
-    "ST",
-    "OBC",
-    "NT",
-    "DNT",
-    "if you are of mixed-caste please select one which you most identify with",
-  ],
-  Religion: [
-    "Buddhist",
-    "Muslim",
-    "Sikh",
-    "Christian",
-    "Hindu",
-    "Atheist",
-    "Other",
-    "Prefer not to respond",
-  ],
-};
-
-const SignUp = () => {
+const ProfilePage = () => {
   const [gender, setGender] = useState("Choose Gender");
   const [fileurl, setFileurl] = useState("");
   const [file, setFile] = useState("");
@@ -74,7 +41,7 @@ const SignUp = () => {
         <input
           className="form-input first-name "
           type="text"
-          placeholder="First Name"
+          placeholder="Name"
           name="ArtTitle"
         />
 
@@ -132,4 +99,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default ProfilePage;

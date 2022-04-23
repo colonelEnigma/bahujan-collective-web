@@ -1,0 +1,35 @@
+.browse-art-page{
+    background-color: var(--color-background-red);
+    /* overflow-x: hidden; */
+}
+.switch{
+    transition: transform 1s;
+    display: flex;
+    flex-direction: row;
+}
+.browse-by{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    padding: 20px;
+    padding-top: 15vh;
+    overflow-y: scroll;
+}
+.browse-parameter{
+    padding: 10px 10px;
+    display: flex;
+    margin: 5px ;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--color-primary);
+}
+.by-category,.by-artist{
+    width: 100vw;
+}
+@media screen and (min-width: 768px){
+    .browse-by {
+        flex-direction: row;
+    }
+}

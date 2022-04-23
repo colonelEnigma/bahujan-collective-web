@@ -1,6 +1,7 @@
 .art-category {
   background-color: var(--color-background-red);
   padding-top: 100px;
+  width: 100vw;
 }
 .category-header {
   padding: 10px;

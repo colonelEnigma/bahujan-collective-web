@@ -13,31 +13,14 @@ const suggestion = ["Dr. Ambedkar", "Lord Buddha", "Hello", "My Name"];
 const ArtSubmit = () => {
   const [suggestions, setSuggestions] = useState(suggestion);
   const [selected, setSelected] = useState([]);
+  const [tagInput, setTagInput] = useState("");
+  const [fileList, setFileList] = useState([]);
 
-  const handleSpace = (word) => {
-    const words = word.split(" ");
-    return words.join("\u00A0");
-  };
-
-  const suggestionClickHandler = (index) => {
-    console.log("clicked>>>>>", index);
-    const val = suggestions[index];
-    setSelected([...selected, val]);
-    const newSuggestions = [...suggestions];
-    newSuggestions.splice(index, 1);
-    setSuggestions([...newSuggestions]);
-  };
-
-  const selectedClickHandler = (index) => {
-    console.log("clicked>>>>>", index);
-    const val = selected[index];
-    setSuggestions([...suggestions, val]);
-    const newSelected = [...selected];
-    newSelected.splice(index, 1);
-    setSelected([...newSelected]);
-  };
-
-  let styleStates = {
+  const [file, setFile] = useState("");
+  const [fileurl, setFileurl] = useState(
+    "http://localhost:3000/static/media/art%208.12be6ff776501e6d64a2.jpg"
+  );
+  const [styleStates, setStyleStates] = useState({
     before: {
       artSubmit: {
         transition: "height 0.5s ease-in-out",
@@ -51,6 +34,7 @@ const ArtSubmit = () => {
         overflow: "hidden",
         top: "0px",
         bottom: "0px",
+        backgroundImage: `url("http://localhost:3000/static/media/art%208.12be6ff776501e6d64a2.jpg")`,
         position: "absolute",
       },
       selectedArtList: { display: "none" },
@@ -73,7 +57,9 @@ const ArtSubmit = () => {
     },
     now: {
       artSubmit: {},
-      selected: {},
+      selected: {
+        backgroundImage: `url("http://localhost:3000/static/media/art%208.12be6ff776501e6d64a2.jpg")`,
+      },
       selectedArtList: {},
       pickFileDiv: {},
       fileIconContainer: {},
@@ -93,13 +79,31 @@ const ArtSubmit = () => {
       floatingActions: {},
       addMoreContainer: { display: "none" },
     },
-  };
-  // setStyles(styleStates.now);
-  const [styles, setStyles] = useState(styleStates.before);
-  const [tagInput, setTagInput] = useState("");
+  });
+  const [styles, setStyles] = useState(styleStates.now);
 
-  useEffect(() => {});
-  console.log("styles>>>>>", styleStates);
+  const handleSpace = (word) => {
+    const words = word.split(" ");
+    return words.join("\u00A0");
+  };
+
+  const suggestionClickHandler = (index) => {
+    const val = suggestions[index];
+    setSelected([...selected, val]);
+    const newSuggestions = [...suggestions];
+    newSuggestions.splice(index, 1);
+    setSuggestions([...newSuggestions]);
+  };
+
+  const selectedClickHandler = (index) => {
+    const val = selected[index];
+    setSuggestions([...suggestions, val]);
+    const newSelected = [...selected];
+    newSelected.splice(index, 1);
+    setSelected([...newSelected]);
+  };
+
+  // setStyles(styleStates.now);
 
   const handleKeyDownTag = (e) => {
     if (e.key === "Enter") {
@@ -107,18 +111,63 @@ const ArtSubmit = () => {
       setTagInput("");
     }
   };
+  const handleFile = (e) => {
+    setFileurl(URL.createObjectURL(e.target.files[0]));
+    setFile(e.target.files[0]);
+  };
+
+  // effects
+  useEffect(() => {
+    setStyleStates({
+      ...styleStates,
+      now: {
+        ...styleStates.now,
+        selected: {
+          ...styleStates.now.selected,
+          backgroundImage: `url('${fileurl}')`,
+        },
+      },
+    });
+    setFileList([...fileList, fileurl]);
+  }, [fileurl]);
+
+  useEffect(() => {
+    setStyles(styleStates.now);
+  }, [styleStates]);
+
   return (
     <div className="art-submit" style={styles.artSubmit}>
       <div className="art-selected" style={styles.selected}>
         <div className="selected-arts-list" style={styles.selectedArtList}>
+          {fileList &&
+            fileList.map((fileurl, index) => {
+              return (
+                index !== 0 && (
+                  <div
+                    key={index}
+                    className="art-circle"
+                    style={{
+                      backgroundImage: `url('${fileurl}')`,
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                    }}
+                  ></div>
+                )
+              );
+            })}
+
+          {/* <div className="art-circle"></div>
           <div className="art-circle"></div>
           <div className="art-circle"></div>
-          <div className="art-circle"></div>
-          <div className="art-circle"></div>
-          <div className="art-circle"></div>
+          <div className="art-circle"></div> */}
         </div>
         <div className="pick-file-div" style={styles.pickFileDiv}>
-          <input type="file" id="file-input" className="file " />
+          <input
+            type="file"
+            id="file-input"
+            className="file "
+            onChange={handleFile}
+          />
           <label
             htmlFor="file-input"
             onClick={() => {

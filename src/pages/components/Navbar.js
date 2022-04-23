@@ -22,11 +22,8 @@ const Navbar = () => {
           <Link to="/" className="nav-link">
             Home
           </Link>
-          <Link to="/browse-art" className="nav-link">
-            Arts
-          </Link>
-          <Link to="/submit-art" className="nav-link">
-            Submit
+          <Link to="/profile" className="nav-link">
+            Profile
           </Link>
           <Link to="/signup" className="nav-link">
             Sign Up
