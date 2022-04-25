@@ -1,13 +1,29 @@
-import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { FaBars as Burger, FaTimes as Cross } from "react-icons/fa";
-import { IoLogoFirebase as Logo } from "react-icons/io5";
-
+import NavLink from "./NavLink";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { IoLogoFirebase as Logo } from "react-icons/io5";
+import { FaBars as Burger, FaTimes as Cross } from "react-icons/fa";
+
+const logos = {
+  mobile: "http://35.154.233.93:3001/uploads/1650822846145FaviconUHD.png",
+  desktop: "http://35.154.233.93:3001/uploads/1650823209506LogoBH.png",
+};
+
+const links = [
+  { to: "/", label: "Home" },
+  { to: "/ignite-2022", label: "Ignite 2022" },
+  { to: "/projects", label: "Projects" },
+  { to: "/about-us", label: "About Us" },
+  { to: "/login", label: "Login" },
+];
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+  const handleClick = () => {
+    setClick(!click);
+    console.log("clicked");
+  };
 
   const menuOverlay = click ? "menu-pop" : "";
 
@@ -15,19 +31,12 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar-container frosted-glass shodow container">
         <Link to="/" className="navbar-logo">
-          <Logo className="navbar-icon" />
-          baco
+          <img src={logos.desktop} className="logoBH" alt="logo" srcset="" />
         </Link>
         <div className="nav-links">
-          <Link to="/" className="nav-link">
-            Home
-          </Link>
-          <Link to="/profile" className="nav-link">
-            Profile
-          </Link>
-          <Link to="/signup" className="nav-link">
-            Sign Up
-          </Link>
+          {links.map(({ to, label }) => (
+            <NavLink to={to} label={label} />
+          ))}
         </div>
         <div className="menu" onClick={handleClick}>
           {click ? (
@@ -55,18 +64,9 @@ const Navbar = () => {
       </div>
       <div className={"menu-overlay frosted-glass shodow " + menuOverlay}>
         <div className="link-container">
-          <Link to="/" className="link" onClick={handleClick}>
-            Home
-          </Link>
-          <Link to="/browse-art" className="link" onClick={handleClick}>
-            Arts
-          </Link>
-          <Link to="/submit-art" className="link" onClick={handleClick}>
-            Submit
-          </Link>
-          <Link to="/signup" className="link" onClick={handleClick}>
-            Sign Up
-          </Link>
+          {links.map(({ to, label }) => (
+            <NavLink to={to} label={label} m={true} onClick={handleClick} />
+          ))}
         </div>
       </div>
     </div>

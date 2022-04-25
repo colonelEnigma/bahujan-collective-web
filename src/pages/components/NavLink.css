@@ -1,0 +1,19 @@
+.N-link{
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: var(--color-primary);
+    transform: scale(1);
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.N-link:hover{
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+.N-link:active{
+    background-color: var(--color-primary);
+    color: white;
+    transform: scale(1);
+}

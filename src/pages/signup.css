@@ -46,15 +46,66 @@
     resize: vertical;
 }
 .align-file-picker{
-
+    display: flex;
+    flex-direction: column;
 justify-content: center;
-align-items: flex-end;
+align-items: center;
+}
+.file-pic-btn-su{
+
 }
 .align-file-picker-icon{
-    border-radius: 6px 6px 0px 0px;
-    transform: translateY(0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px 6px 0px 0px;
+
+}
+.check-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 40px;
+    width: 100%;
+    /* background-color: aqua; */
+}
+.checkbox-input{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: none;
+}
+.checkbox-label{
+    font-size: 18px;
+    color: #757575;
+    width: 100%;
+    padding-left: 10px;
+}
+.checkbox-label-d{
+font-size: 18px;
+color: #757575;
+    width: 50%;
+    padding-left: 10px;
+}
+.password-wrapper{
+    width: 100%;
+    position: relative;
+}
+.pass-icon{
+    width: 20px;
+    height: 20px;
+    
+    position: absolute;
 }
 @media screen and (min-width: 768px) {
+    /* .signup-top-padding{
+        padding-top: 100px;
+    } */
     .login{
         display: flex;
         flex-direction: row;
@@ -103,6 +154,11 @@ align-items: flex-end;
         font-size: 20px;
         height: 50px;
     }
+    .file-pic-btn-su{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    }
     .align-file-picker{
         justify-content: flex-end;
         align-items: center;
@@ -110,5 +166,11 @@ align-items: flex-end;
     }
     .align-file-picker-icon{
         border-radius: 6px 0px 0px 6px;
+    }
+    .check-box{
+        width: 90%;
+    }
+    .password-wrapper{
+        width: 90%;
     }
 }

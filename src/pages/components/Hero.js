@@ -13,7 +13,12 @@ const Hero = () => {
       </p>
       <div className="btn-pair">
         <button className="btn-prime">
-          <Link to="./submit-art">SUBMIT YOUR ENTRY</Link>
+          <Link
+            style={{ color: "white", textDecoration: "none" }}
+            to="./submit-art"
+          >
+            SUBMIT YOUR ENTRY
+          </Link>
         </button>
         <button className="btn-second">FIND OUT MORE</button>
       </div>

@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div className="login">
-      <div className="art-selected desktop"> </div>
-      <div className="art-form">
+      <div className="desktop"> </div>
+      <div className="art-form" style={{ height: "100vh" }}>
         <img
           className="baco-icon-large"
-          src="Icons/logo/Logo Horizontal.svg"
-          alt=""
+          src="Icons/logo/LogoBH.png"
+          alt="Bahujan Collective Logo"
         />
         <input
           className="input-title form-input"

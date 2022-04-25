@@ -27,6 +27,7 @@
 .file {
   display: none;
 }
+
 .file-icon-container {
   height: 50px;
   width: 50px;
@@ -77,7 +78,7 @@
   font-size: 20px;
   /* background shadow */
   font-family: var(--font-heading);
-  color: var(--color-back);
+  color: rgb(125, 125, 125);
   margin-bottom: 10px;
 }
 .input-title {

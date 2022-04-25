@@ -23,10 +23,11 @@
 }
 .link-container {
   display: flex;
-  gap: 30px;
+  gap: 10px;
+  
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
   padding: 40px;
   transition: all;
@@ -67,6 +68,9 @@
   text-decoration: none;
   color: var(--color-primary);
 }
+.logoBH{
+  height: 70px;  
+}
 .navbar-icon {
   color: var(--color-primary);
   font-size: xx-large;
@@ -93,9 +97,7 @@
     background: hsla(0, 0%, 100%, 0.9);
   }
 
-  .navbar-container:hover {
-    background: hsla(0, 0%, 100%, 1);
-  }
+ 
   .navbar-logo {
     font-size: large;
   }
@@ -103,7 +105,7 @@
     color: #0f0f0f;
     display: flex;
     /* width: 70%; */
-    gap: 30px;
+    gap: 10px;
     justify-content: space-between;
     align-items: center;
     /* background-color: aqua; */
