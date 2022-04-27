@@ -15,7 +15,7 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="section">
-          <h1>Purpose and Vision​</h1>
+          <h1>Purpose and Vision</h1>
           <p>
             Fulfil the need for a unifying platform on which our Bahujan
             Community can celebrate our Assertion and Excellence.We don't think

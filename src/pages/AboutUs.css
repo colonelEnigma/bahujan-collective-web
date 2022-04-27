@@ -7,11 +7,11 @@
 }
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
     justify-items:start;
-    align-items: center;
+    align-content: center;
     padding-inline: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .Aboutus-container h1{
     margin-bottom: 5px;
@@ -27,7 +27,6 @@
     font-family: var(--font-subtitle);
 }
 .section{
-    /* margin-bottom: 20px; */
     padding: 20px;
     border-radius: 20px;
     background-color: white;
@@ -36,5 +35,15 @@
 @media screen and (min-width: 600px){
     .Aboutus-container{
         padding-top: 100px;
+    }
+}
+@media screen and (min-width: 667px){
+    .Aboutus-container{
+        padding-top: 150px;
+    }
+}
+@media screen and (min-width: 981px){
+    .Aboutus-container{
+        padding-top: 150px;
     }
 }

@@ -8,6 +8,7 @@
     backdrop-filter: blur(10px);
     z-index: 999999;
     display: flex;
+    /* overflow: scroll; */
     justify-content: center;
     align-items: center;
 }
