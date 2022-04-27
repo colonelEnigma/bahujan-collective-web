@@ -8,13 +8,14 @@
 
 :root {
   /* colors */
-  --color-primary: #0059ff;
+  --color-primary: RGB(13, 71, 164);
   --color-primary-dark: #0044c2;
   --color-secondary: #f4f4f4;
   --color-white: #ffffff;
   --color-red-200: #ffc3c3;
   --color-red-prime: #ef4444;
   --color-black: #0f0f0f;
+  --color-dark-gray: #555555;
   --color-background-black: #202020;
   --color-background-blue: hsl(214, 92%, 90%);
   --color-background-red: #ffeded;

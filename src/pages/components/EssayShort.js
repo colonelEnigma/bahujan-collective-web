@@ -1,7 +1,7 @@
 const EssayShort = () => {
   return (
-    <div className="essayShort">
-      <div className="content-box">
+    <div className="essayShort" style={{}}>
+      <div className="content-box" style={{}}>
         <h3 className="pre-heading">Coming Soon</h3>
         <h1 className="h1">Essay</h1>
         <h1 className="h1">Writing Project</h1>
@@ -13,7 +13,7 @@ const EssayShort = () => {
 
         <button className="btn-second margin-top-2">know more</button>
       </div>
-      <div className="illus-box">
+      <div className="illus-box" style={{ position: "relative" }}>
         <div>
           <img
             src="Images/writing.svg"

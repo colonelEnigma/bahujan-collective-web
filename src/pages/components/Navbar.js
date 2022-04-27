@@ -15,7 +15,7 @@ const links = [
   { to: "/ignite-2022", label: "Ignite 2022" },
   { to: "/projects", label: "Projects" },
   { to: "/about-us", label: "About Us" },
-  { to: "/login", label: "Login" },
+  { to: "/testing", label: "testing" },
 ];
 
 const Navbar = () => {

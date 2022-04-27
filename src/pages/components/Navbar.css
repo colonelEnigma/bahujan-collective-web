@@ -90,10 +90,12 @@
 @media screen and (min-width: 768px) {
   .navbar-container {
     margin-top: 1%;
-    height: 70px;
+    height: cal 70px;
     width: 70%;
+    width: calc(min(90%,900px));
     padding-inline: 40px;
     border-radius: 100px;
+    overflow: hidden;
     background: hsla(0, 0%, 100%, 0.9);
   }
 

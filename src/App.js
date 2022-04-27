@@ -7,39 +7,51 @@ import AssamblyPage from "./pages/AssamblyPage";
 import ProfilePage from "./pages/ProfilePage";
 import ArtSubmit from "./pages/ArtSubmit";
 import Navbar from "./pages/components/Navbar";
+import Modal from "./pages/components/Modal";
 
 import BrowseArtPage from "./pages/BrowseArtPage";
 import ArtFullScreenMobile from "./pages/ArtFullScreenMobile";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useReducer } from "react";
-
-// const reducer = (state, action) => {
-//   switch (action.type) {
-//     case "LOGIN":return { ...state,user: action.payload , loggedIn: true  };
-//     case "LOGOUT":return { ...state,loggedIn: false,user: { } };
-//
-//     default:return state;
-// };
-// const initialState = { loggedIn: true, user: { } };
+import { useState } from "react";
+import { BAHUJAN, ALLY } from "./pages/Utils/constants";
+import TermsModal from "./pages/components/TermsModal";
+import AboutUs from "./pages/AboutUs";
+import Ignite2022 from "./pages/Ignite2022";
 
 function App() {
-  // const [state, dispatch] = useReducer(reducer, initialState);
+  const [userType, setUserType] = useState("");
+  const setUser = (type) => {
+    setUserType(type);
+  };
 
   return (
     <Router>
       <Navbar />
+      {!userType && (
+        <Modal>
+          <TermsModal setUser={setUser} />
+        </Modal>
+      )}
       <div className="app">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/testing" element={<AssamblyPage></AssamblyPage>} />
-
+          <Route
+            path="/testing"
+            element={
+              <AssamblyPage>
+                <TermsModal />
+              </AssamblyPage>
+            }
+          />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/profile" element={<ProfilePage />} />
-          <Route path="/browse-art" element={<BrowseArtPage />} />
-          <Route path="/submit-art" element={<ArtSubmit />} />
-          <Route path="/show-art-m" element={<ArtFullScreenMobile />} />
-          <Route path="/show-art-m" element={<ArtFullScreenMobile />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route
+            path="/ignite-2022"
+            element={<Ignite2022 userType={userType} />}
+          />
+          <Route path="/projects" element={<ArtFullScreenMobile />} />
         </Routes>
       </div>
     </Router>

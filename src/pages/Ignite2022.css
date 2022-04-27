@@ -1,0 +1,50 @@
+.ignite-container{
+    min-height: 100vh;
+    padding: 80px 10px 10px 10px ;
+    background-color: var(--color-background-red);
+}
+.ignite-content{
+    display: flex;
+    flex-direction: column;
+}
+.ignite-heading{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.ignite-heading h1{
+    font-size: 3rem;
+    font-family: var(--font-subtitle);
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+.ignite-heading p{
+    min-width: 100%;
+    font-size: 1.rem;
+    font-weight: 400;
+    font-family: var(--font-heading);
+    font-style: italic;
+    color: var(--color-primary);
+    margin-bottom: 0;
+}
+.ignite-content-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ignite-content-right{
+    height: 80vh;
+    background-color: bisque;
+}
+
+@media screen and (min-width: 768px) {
+    .ignite-content{
+        flex-direction: row;
+    }
+    .ignite-content-right{
+        width: 50%;
+    }
+    .ignite-content-left{
+        /* width: 50%; */
+    }
+}

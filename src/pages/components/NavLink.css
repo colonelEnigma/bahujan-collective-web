@@ -5,8 +5,8 @@
     color: var(--color-primary);
     transform: scale(1);
     font-weight: bold;
-    font-size: 14px;
-    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-size: 16px;
+    transition: transform background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .N-link:hover{
     background-color: #ffffff;

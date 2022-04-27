@@ -34,6 +34,7 @@
   min-height: 100vh;
   max-width: 100%;
   background-image: url("../public/Images/heroBackdrop.jpg");
+  background-image: var(--bg-url-15);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -55,6 +56,15 @@
   margin-bottom: 3vw;
   text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
+.xl-h1{
+  font-family: var(--font-display);
+  font-size: 8vw;
+  font-weight: 700;
+  line-height: 0.8;
+  color: var(--color-white);
+  margin-bottom: 3vw;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
 
 .p-hero {
   color: #f4f4f4;
@@ -62,7 +72,16 @@
   font-size: 1.25rem;
   font-weight: 400;
   max-width: 80%;
+  color:black;
+  color: rgb(0, 33, 57);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: rgba(200, 200, 200, 0.3);
+
 }
+
+
 
 p {
   color: var(--color-black);
@@ -127,7 +146,7 @@ p {
 .essayShort {
   display: flex;
   flex-direction: column-reverse;
-  align-items: center;
+  align-items: flex-end;
   height: min-content;
   width: 100vw;
   justify-content: center;
@@ -176,15 +195,17 @@ p {
   justify-content: center;
   height: auto;
   padding: 20px;
+  height: 100%;
 }
 .illus-box div {
   /* height: 29vw; */
   width: 100vw;
   display: flex;
   justify-content: right;
+  align-items: center;
 }
 .illus-box div img {
-  width: 100vw;
+  width: 90vw;
   /* height: 70vh; */
   object-fit: cover;
 }
@@ -216,6 +237,12 @@ p {
   flex-direction: column;
   gap: 15px;
 }
+@media screen and (min-width: 768px) and (max-width: 1117px) {
+  .illus-box div img {
+    transform: translateY(-10%);
+  
+  }
+}
 
 @media screen and (min-width: 768px) {
   .btn-pair {
@@ -243,5 +270,10 @@ p {
   .illus-box div img {
     width: 80vw;
     height: 70vh;
+  }
+  .btn-prime{
+    margin-left: 50vw;
+    transform: translateX(-50%);
+    width: 200px;
   }
 }
