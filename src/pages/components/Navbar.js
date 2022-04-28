@@ -31,7 +31,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar-container frosted-glass shodow container">
         <Link to="/" className="navbar-logo">
-          <img src={logos.desktop} className="logoBH" alt="logo" srcset="" />
+          <img src="/LogoBH.png" className="logoBH" alt="logo" srcset="" />
         </Link>
         <div className="nav-links">
           {links.map(({ to, label }) => (
