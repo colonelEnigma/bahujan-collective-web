@@ -31,6 +31,18 @@
     border-radius: 20px;
     background-color: white;
 }
+.contactLinks{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-black);
+    text-decoration: none;
+    flex-direction: row;
+}
+.contactLinks:visited{
+    color: var(--color-black);
+}
 
 @media screen and (min-width: 600px){
     .Aboutus-container{

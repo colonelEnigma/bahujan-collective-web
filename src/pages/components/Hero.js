@@ -78,7 +78,7 @@ const Hero = () => {
       <button className="btn-prime shodow" style={{ marginTop: "20px" }}>
         <Link
           style={{ color: "white", textDecoration: "none" }}
-          to="./submit-art"
+          to="/ignite-2022"
         >
           IGNITE 2022
         </Link>

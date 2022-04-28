@@ -11,15 +11,16 @@ const ArtDistShort = () => {
       </div>
       <div className="content-box">
         <h3 className="pre-heading">Coming Soon</h3>
-        <h1 className="h1">Essay</h1>
-        <h1 className="h1 t-align-r">Writing Project</h1>
+        <h1 className="h1">Art</h1>
+        <h1 className="h1 t-align-r">Reco-</h1>
+        <h1 className="h1">gnition</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quo
           dicta, recusandae quis unde id dolor cumque distinctio odio numquam
           velit dolorum.
         </p>
 
-        <button className="btn-second margin-top-2">know more</button>
+        <button className="btn-second margin-top-2">Coming Soon</button>
       </div>
     </div>
   );

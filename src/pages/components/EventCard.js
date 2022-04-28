@@ -15,8 +15,8 @@ const EventCard = ({ userType, event }) => {
       <div className="event-info">
         <div className="event-card-content">
           <h1>{event.title}</h1>
-          <p style={{}}>
-            <b>{event.date}</b>
+          <p>
+            <b style={{ cssColorBlk }}>{event.date}</b>
           </p>
           <p>
             <b>{event.time}</b>

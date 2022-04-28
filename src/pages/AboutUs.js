@@ -1,3 +1,4 @@
+import { contacts } from "../Configs/Contacts/contacts";
 import "./AboutUs.css";
 
 const AboutUs = () => {
@@ -54,16 +55,23 @@ const AboutUs = () => {
         <div className="section">
           <h1>Stay in Touch</h1>
           <p>
-            <a href="https://www.instagram.com/bahujancollective">Instagram</a>
-            &nbsp;&nbsp;
-            <a href="https://twitter.com/bahujanCollect">Twitter</a>&nbsp;&nbsp;
-            <a href="https://www.youtube.com/user/KnowRealIndia">YouTube</a>
-            &nbsp;&nbsp;
-            <a href="mailto:opsmanager.bahujancollective@gmail.com">
-              Email
-            </a>{" "}
-            &nbsp;&nbsp; (include “Grievance” in the subject of your email in
-            case of grievances)
+            {contacts.map((contact, index) => {
+              return (
+                <span>
+                  <a
+                    href={contact.url}
+                    className="contactLinks"
+                    style={contact.url ? {} : { color: "#727272" }}
+                  >
+                    <contact.icon className=".footer-content-icon" />
+                    {contact.channel}
+                  </a>
+                  <br />
+                </span>
+              );
+            })}
+            (include “Grievance” in the subject of your email in case of
+            grievances)
           </p>
         </div>
       </div>

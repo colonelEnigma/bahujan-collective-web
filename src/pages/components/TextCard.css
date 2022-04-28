@@ -1,7 +1,7 @@
 .text-card{
     padding: 20px;
     border-radius: 20px;
-background-color: rgb(253, 251, 251);
+    background-color: rgb(253, 251, 251);
 
 }
 .text-card h1{
@@ -26,6 +26,6 @@ background-color: rgb(253, 251, 251);
     }
     .text-card p{
         font-weight: 500;
-        color: var(--color-dark-gray);
+        color: rgb(37, 37, 37);
     }
 }

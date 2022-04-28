@@ -96,7 +96,7 @@ const Ignite2022 = ({ userType }) => {
               working knowledge of English is necessary.
             </p>
           </TextCard>
-          <TextCard>
+          <TextCard style={{ padding: "25px 10px" }}>
             <h1 style={{ marginBottom: "10px" }}>Registration</h1>
             <div className="session-grid">
               {IgniteEvents.map((event, index) => {

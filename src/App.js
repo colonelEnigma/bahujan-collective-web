@@ -5,15 +5,12 @@ import SignUp from "./pages/SignUp";
 import AssamblyPage from "./pages/AssamblyPage";
 
 import ProfilePage from "./pages/ProfilePage";
-import ArtSubmit from "./pages/ArtSubmit";
 import Navbar from "./pages/components/Navbar";
 import Modal from "./pages/components/Modal";
 
-import BrowseArtPage from "./pages/BrowseArtPage";
 import ArtFullScreenMobile from "./pages/ArtFullScreenMobile";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState } from "react";
-import { BAHUJAN, ALLY } from "./pages/Utils/constants";
 import TermsModal from "./pages/components/TermsModal";
 import AboutUs from "./pages/AboutUs";
 import Ignite2022 from "./pages/Ignite2022";

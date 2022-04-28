@@ -11,7 +11,7 @@ const EssayShort = () => {
           velit dolorum.
         </p>
 
-        <button className="btn-second margin-top-2">know more</button>
+        <button className="btn-second margin-top-2">Coming Soon</button>
       </div>
       <div className="illus-box" style={{ position: "relative" }}>
         <div>
