@@ -7,14 +7,20 @@ const bgColor = {
   past: "background: hsla(141, 79%, 85%, 1)",
 };
 
+const cssColorBlk = { color: "black" };
+
 const EventCard = ({ userType, event }) => {
   return (
     <div className="event-card" style={{ backgroundColor: bgColor.future }}>
       <div className="event-info">
         <div className="event-card-content">
           <h1>{event.title}</h1>
-          <p>{event.date}</p>
-          <p>{event.time}</p>
+          <p style={{}}>
+            <b>{event.date}</b>
+          </p>
+          <p>
+            <b>{event.time}</b>
+          </p>
         </div>
         <ul className="event-description">
           {event.description.map((desc, index) => {

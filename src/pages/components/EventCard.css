@@ -9,13 +9,18 @@
 .event-card-content{
     margin-bottom: 10px;
 }
-.event-card-content p{
+.event-card-content p {
     font-family: var(--font-heading);
+    color: black;
 
 }
 .event-description{
     margin-bottom: 10px;
     margin-left: 10px;
+}
+.event-description p{
+    font-family: var(--font-heading);
+    color: rgb(0, 0, 0);
 }
 .event-card-action{
     display: flex;
@@ -40,3 +45,16 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
 }
+
+@media screen and (min-width: 754px){
+    .event-description p{
+        font-family: var(--font-heading);
+        color: rgb(44, 44, 44);
+    }
+    .event-card-content p {
+        font-family: var(--font-heading);
+        color: rgb(44, 44, 44);
+    
+    }
+}
+    

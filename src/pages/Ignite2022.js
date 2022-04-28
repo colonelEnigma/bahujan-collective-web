@@ -96,12 +96,13 @@ const Ignite2022 = ({ userType }) => {
               working knowledge of English is necessary.
             </p>
           </TextCard>
-          <TextCard
-            style={{ display: "flex", flexDirection: "column", gap: "10px" }}
-          >
-            {IgniteEvents.map((event, index) => {
-              return <EventCard event={event} userType={userType} />;
-            })}
+          <TextCard>
+            <h1 style={{ marginBottom: "10px" }}>Registration</h1>
+            <div className="session-grid">
+              {IgniteEvents.map((event, index) => {
+                return <EventCard event={event} userType={userType} />;
+              })}
+            </div>
           </TextCard>
           <TextCard>
             <h1>Note</h1>
@@ -137,7 +138,6 @@ const Ignite2022 = ({ userType }) => {
             </p>
           </TextCard>
         </div>
-        <div className="ignite-content-right"></div>
       </div>
     </div>
   );
