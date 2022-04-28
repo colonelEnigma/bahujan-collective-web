@@ -1,17 +1,21 @@
-import { useState } from "react";
-import { ALLY, BAHUJAN } from "../Utils/constants";
+// import { useState } from "react";
+import { BAHUJAN } from "../Utils/constants";
 import "./EventCard.css";
 const bgColor = {
-  future: "background: hsla(213, 97%, 87%, 1)",
-  current: "background: hsla(141, 79%, 85%, 1)",
-  past: "background: hsla(141, 79%, 85%, 1)",
+  future: "hsla(213, 97%, 87%, 1)",
+  current: " hsla(141, 79%, 85%, 1)",
+  past: " hsla(141, 79%, 85%, 1)",
 };
 
 const cssColorBlk = { color: "black" };
 
 const EventCard = ({ userType, event }) => {
+  console.log(`status>> ${event.status} ${bgColor[event.status]}`);
   return (
-    <div className="event-card" style={{ backgroundColor: bgColor.future }}>
+    <div
+      className="event-card"
+      style={{ backgroundColor: bgColor[event.status] }}
+    >
       <div className="event-info">
         <div className="event-card-content">
           <h1>{event.title}</h1>

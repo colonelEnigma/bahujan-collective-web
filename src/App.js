@@ -14,6 +14,7 @@ import { useState } from "react";
 import TermsModal from "./pages/components/TermsModal";
 import AboutUs from "./pages/AboutUs";
 import Ignite2022 from "./pages/Ignite2022";
+import Projects from "./pages/Projects";
 
 function App() {
   const [userType, setUserType] = useState("");
@@ -48,7 +49,7 @@ function App() {
             path="/ignite-2022"
             element={<Ignite2022 userType={userType} />}
           />
-          <Route path="/projects" element={<ArtFullScreenMobile />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </div>
     </Router>

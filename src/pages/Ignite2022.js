@@ -10,11 +10,9 @@ const IgniteEvents = [
     title: "Session #1",
     date: "Sunday, May 8th ",
     time: "9AM to 11AM (IST)",
+    status: "current",
     RegLink:
       "https://www.eventbrite.com/e/ignite-2022-session-1-tickets-327645535617",
-    // RegLink:
-    //   "",
-    // RecoLink: "/ignite-2022",
     RecoLink: "",
     description: [
       "Workshop overview. Warm up activities.",
@@ -26,6 +24,7 @@ const IgniteEvents = [
     title: "Session #2",
     date: "Sunday, May 15th ",
     time: "9AM to 11AM(IST)",
+    status: "future",
     RegLink: "",
     RecoLink: "",
     description: [
@@ -38,6 +37,7 @@ const IgniteEvents = [
     title: "Session #3",
     date: "Sunday, May 15th ",
     time: "9AM to 11AM(IST)",
+    status: "future",
     RegLink: "",
     RecoLink: "",
     description: [
@@ -46,9 +46,10 @@ const IgniteEvents = [
     ],
   },
   {
-    title: "Session #3",
+    title: "Session #4",
     date: "Sunday, May 15th ",
     time: "9AM to 11AM(IST)",
+    status: "future",
     RegLink: "",
     RecoLink: "",
     description: [
