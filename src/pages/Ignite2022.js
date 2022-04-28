@@ -103,6 +103,39 @@ const Ignite2022 = ({ userType }) => {
               return <EventCard event={event} userType={userType} />;
             })}
           </TextCard>
+          <TextCard>
+            <h1>Note</h1>
+            <p>
+              Please use the links on the right to register for each class as
+              and when the registration link is active.These links may also be
+              used to request for a video recording of the class if you weren’t
+              able to attend the same.
+              <br />
+              <br />
+              <b>
+                While it is a four-week series, we still need participants to
+                register for each class individually.
+              </b>
+              <br />
+              <br />
+              <b>Zoom Attendance :</b> 40 Students <br />
+              These seat have been set up to ensure diversity and representation
+              within the Bahujan Community, so please review the options that
+              are available and pick the one that best intersects with who you
+              identify as.Please pick the General Bahujan Category option only
+              when you can't register under any of the other special
+              <br />
+              <br /> If all the Zoom related categories are full please select
+              YouTube Live Category
+              <br />
+              <br /> <b>YouTube Live:</b>(no limit)
+              <br />
+              We will have a dedicated host and modrator intracting with YouTube
+              Live Attendees so rest assured we'll do everything we can to make
+              you feel like you'rr part of the class and any questions asked on
+              YouTube Live will be posed to the coach, Linda to answer.
+            </p>
+          </TextCard>
         </div>
         <div className="ignite-content-right"></div>
       </div>
