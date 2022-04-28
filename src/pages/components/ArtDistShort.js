@@ -11,9 +11,9 @@ const ArtDistShort = () => {
       </div>
       <div className="content-box">
         <h3 className="pre-heading">Coming Soon</h3>
-        <h1 className="h1">Art</h1>
-        <h1 className="h1 t-align-r">Reco-</h1>
-        <h1 className="h1">gnition</h1>
+        <h1 className="h1">Bahujan</h1>
+        <h1 className="h1 t-align-r">Art2022</h1>
+        <h1 className="h1"></h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quo
           dicta, recusandae quis unde id dolor cumque distinctio odio numquam

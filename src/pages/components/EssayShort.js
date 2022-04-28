@@ -3,13 +3,9 @@ const EssayShort = () => {
     <div className="essayShort" style={{}}>
       <div className="content-box" style={{}}>
         <h3 className="pre-heading">Coming Soon</h3>
-        <h1 className="h1">Essay</h1>
-        <h1 className="h1">Writing Project</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quo
-          dicta, recusandae quis unde id dolor cumque distinctio odio numquam
-          velit dolorum.
-        </p>
+        <h1 className="h1">Bahujan</h1>
+        <h1 className="h1">Voices 2022</h1>
+        <p>Essay and Poetry Anthology​</p>
 
         <button className="btn-second margin-top-2">Coming Soon</button>
       </div>
