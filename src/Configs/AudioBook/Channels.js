@@ -105,7 +105,7 @@ export const AUDS = {
       <br />
       <b>Studio: </b>
       LA Digital Recording
-      <br />
+      <br /><br />
       Finally, this project would not have been possible without
       <br />
     </p>
