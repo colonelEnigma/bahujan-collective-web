@@ -9,7 +9,7 @@
   display: block;
   position: fixed;
   bottom: 10px;
-  height: 50vh;
+  /* height: 50vh; */
   width: 95vw;
   border-radius: 15px;
   margin-inline: auto;

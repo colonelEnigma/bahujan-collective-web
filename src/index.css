@@ -9,7 +9,7 @@
 :root {
   /* colors */
   --color-primary: RGB(13, 71, 164);
-  --color-primary-dark: #0044c2;
+  --color-primary-dark: hsla(221, 100%, 32%, 1);
   --color-secondary: #f4f4f4;
   --color-white: #ffffff;
   --color-red-200: #ffc3c3;

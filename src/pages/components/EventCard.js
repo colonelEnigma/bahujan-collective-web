@@ -38,6 +38,8 @@ const EventCard = ({ userType, event }) => {
         <div className="event-card-action">
           {!event.RecoLink && event.RegLink && (
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               href={event.RegLink}
               style={
                 userType === BAHUJAN
@@ -56,7 +58,7 @@ const EventCard = ({ userType, event }) => {
             </a>
           )}
           {event.RecoLink && event.RegLink && (
-            <a href={event.RecoLink}>
+            <a href={event.RecoLink} target="_blank" rel="noopener noreferrer">
               <span>Request Recording</span>
             </a>
           )}

@@ -15,6 +15,8 @@ import TermsModal from "./pages/components/TermsModal";
 import AboutUs from "./pages/AboutUs";
 import Ignite2022 from "./pages/Ignite2022";
 import Projects from "./pages/Projects";
+import MenuIcon from "./pages/components/MenuIcon";
+import AudioBook from "./pages/AudioBook";
 
 function App() {
   const [userType, setUserType] = useState("");
@@ -34,11 +36,21 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
-            path="/testing"
+            path="/audiobook/AnUndelivedSpeech"
             element={
-              <AssamblyPage>
-                <TermsModal />
-              </AssamblyPage>
+              <AudioBook
+                title={"AN UNDELIVED SPEECH: ANNIHILATION OF CASTE"}
+                coverUrl={"/Images/an Undelivered.png"}
+              />
+            }
+          />
+          <Route
+            path="/audiobook/TheEssenceOfBuddhism"
+            element={
+              <AudioBook
+                title={"The Essence of Buddhism"}
+                coverUrl={"/Images/The Essence of Buddhism.png"}
+              />
             }
           />
           <Route path="/login" element={<Login />} />

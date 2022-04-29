@@ -61,6 +61,8 @@ const AboutUs = () => {
                   <a
                     href={contact.url}
                     className="contactLinks"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={contact.url ? {} : { color: "#727272" }}
                   >
                     <contact.icon className=".footer-content-icon" />

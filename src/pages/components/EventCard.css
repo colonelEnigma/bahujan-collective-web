@@ -10,6 +10,9 @@
 .event-card-content{
     margin-bottom: 10px;
 }
+.event-card-content h1{
+    
+}
 .event-card-content p {
     font-family: var(--font-heading);
     color: black;
@@ -30,18 +33,19 @@
 }
 .event-card-action a{
     display: flex;
-    width: 100%;
+    width: 95%;
+    margin: 2% 0;
     height: 100px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: var(--color-primary);
+    color: white;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.25px;
     font-family: var(--font-heading);
-    background-color: var(--color-background-red);
+    background-color: var(--color-primary);
     border-radius: 15px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;

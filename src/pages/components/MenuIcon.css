@@ -1,0 +1,26 @@
+.menu-con-container{
+height: 300px;
+width: 300px;
+display: flex;
+padding: 80px;
+border-radius: 40px;
+align-items: center;
+flex-direction: column;
+background-color: white;
+justify-content: space-between;
+}
+
+.bottom-stroke, .top-stroke{
+    height: 20px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: black;
+  
+}
+
+.top-stroke{
+
+}
+.bottom-stroke{
+
+}

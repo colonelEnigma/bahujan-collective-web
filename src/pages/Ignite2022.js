@@ -72,7 +72,11 @@ const Ignite2022 = ({ userType }) => {
             <h1>About</h1>
             <p>
               Ignite 2022 is a progressive four week writing workshop taught by
-              <a href="/">
+              <a
+                href="http://thewritingdoula.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <b> Linda Jones</b>
               </a>
               , hosted exclusively for the Bahujan community.
@@ -97,8 +101,8 @@ const Ignite2022 = ({ userType }) => {
               working knowledge of English is necessary.
             </p>
           </TextCard>
-          <TextCard style={{ padding: "25px 10px" }}>
-            <h1 style={{ marginBottom: "10px" }}>Registration</h1>
+          <TextCard style={{ padding: "25px 20px" }}>
+            <h1 style={{ marginBottom: "20px" }}>Registration</h1>
             <div className="session-grid">
               {IgniteEvents.map((event, index) => {
                 return <EventCard event={event} userType={userType} />;

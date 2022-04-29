@@ -10,7 +10,12 @@ const Footer = () => {
       <div className="footer-content">
         {contacts.map((contact) => {
           return (
-            <a href={contact.url} aria-label={contact.channel}>
+            <a
+              href={contact.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={contact.channel}
+            >
               <div className="footer-content-item">
                 <contact.icon className="footer-content-icon" />
               </div>
