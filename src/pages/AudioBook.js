@@ -1,7 +1,7 @@
 import { AudioBook_Channels as channels } from "../Configs/AudioBook/Channels";
 
 import "./AudioBook.css";
-const AudioBook = ({ title, coverUrl }) => {
+const AudioBook = ({ title, coverUrl, description }) => {
   const Circle = ({ state = false }) => {
     return (
       <span
@@ -31,16 +31,7 @@ const AudioBook = ({ title, coverUrl }) => {
               <h1>{title}</h1>
               <h2>Buy or request this book from retailers listed below!</h2>
             </div>
-            <div className="distributors-desc">
-              <h1>Distributors</h1>
-              <p>
-                <b>Note: </b> Please be Aware that if your audiobook has been
-                distributed to any of the retailers below, it may take some time
-                to appear on their platforms, Check reatiler websites to see if
-                your audiobook is availabe. Currently retailers do not notify
-                us...
-              </p>
-            </div>
+            <div className="distributors-desc">{description}</div>
           </div>
         </div>
       </div>

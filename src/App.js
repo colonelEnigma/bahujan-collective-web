@@ -8,7 +8,6 @@ import ProfilePage from "./pages/ProfilePage";
 import Navbar from "./pages/components/Navbar";
 import Modal from "./pages/components/Modal";
 
-import ArtFullScreenMobile from "./pages/ArtFullScreenMobile";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import TermsModal from "./pages/components/TermsModal";
@@ -17,6 +16,7 @@ import Ignite2022 from "./pages/Ignite2022";
 import Projects from "./pages/Projects";
 import MenuIcon from "./pages/components/MenuIcon";
 import AudioBook from "./pages/AudioBook";
+import { EOB, AUDS } from "./Configs/AudioBook/Channels";
 
 function App() {
   const [userType, setUserType] = useState("");
@@ -39,8 +39,9 @@ function App() {
             path="/audiobook/AnUndelivedSpeech"
             element={
               <AudioBook
-                title={"AN UNDELIVED SPEECH: ANNIHILATION OF CASTE"}
-                coverUrl={"/Images/an Undelivered.png"}
+                title={AUDS.title}
+                coverUrl={AUDS.coverUrl}
+                description={AUDS.description}
               />
             }
           />
@@ -48,8 +49,9 @@ function App() {
             path="/audiobook/TheEssenceOfBuddhism"
             element={
               <AudioBook
-                title={"The Essence of Buddhism"}
-                coverUrl={"/Images/The Essence of Buddhism.png"}
+                title={EOB.title}
+                coverUrl={EOB.coverUrl}
+                description={EOB.description}
               />
             }
           />

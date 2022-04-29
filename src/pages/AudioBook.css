@@ -18,18 +18,18 @@
     background-color: white;
 }
 .ab-left{
-    
+    width: 70%;
 }
 .ab-cover{
 
 }
 .ab-cover img{
- width: 100%;
+    width:40vw ;
 }
 .ab-right{
-    width: 70%;
+    width: 100%;
     padding: 20px;
-    /* background-color: aqua; */
+    background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,6 +91,9 @@ font-size: x-small;
 
 
 @media screen and (max-width: 600px) {
+    .ab-cover img{
+        width:88vw ;
+    }
     .ab-flex{
         flex-direction: column;
     }

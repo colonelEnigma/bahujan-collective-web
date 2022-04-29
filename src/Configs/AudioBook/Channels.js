@@ -47,3 +47,67 @@ export const AudioBook_Channels = [
   { channle: "Permabound", state: true },
   { channle: "UBook", state: true },
 ];
+export const EOB = {
+  coverUrl: "/Images/The Essence of Buddhism.jpg",
+  title: "The Essence of Buddhism",
+  description: (
+    <p>
+      A book truly for the scientific, rational and socially inclined modern
+      Buddhist.
+      <br />
+      <br />
+      <b>Written by: </b>
+      Prof. P . Lakshmi Narasu
+      <br />
+      <br />
+      <b>Narrated by: </b>
+      Siddhartha Valicharla
+      <br />
+      <br />
+      <b>Produced by: </b>
+      Know Real India
+      <br />
+      <br />
+      <b>Cover Pic by: </b>
+      Shajan Kavitha
+      <br />
+      <br />
+      <b>Edited By: </b>
+      Faizur Rahman
+      <br />
+      <br />
+      <b>Project Managed by: </b>
+      Shai Thakkar
+    </p>
+  ),
+};
+export const AUDS = {
+  coverUrl: "/Images/an Undelivered.jpg",
+  title: "AN UNDELIVED SPEECH: ANNIHILATION OF CASTE",
+  description: (
+    <p>
+      The most famous speech that was never delivered, "Annihilation of Cast",
+      by Dr. B. R. Ambedkar, along with his paper Castes in India: Their
+      Mechanism, Genesis and Development, combined to form one cohesive
+      audiobook, the way Babasaheb envisioned it.
+      <br />
+      <br />
+      <b>Acknowledgements:</b> <br />
+      Rahul Borde for his rendition of Sanskrit Verses that can be heard toward
+      the end of "Annihilation of Cast"
+      <br />
+      <br />
+      <b>Written by: </b>
+      Prof. P . Lakshmi Narasu
+      <br />
+      <b>Audio engineer: </b>
+      Kevin Cleland
+      <br />
+      <b>Studio: </b>
+      LA Digital Recording
+      <br />
+      Finally, this project would not have been possible without
+      <br />
+    </p>
+  ),
+};
