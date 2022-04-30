@@ -5,7 +5,11 @@ const EssayShort = () => {
         <h3 className="pre-heading">Coming Soon</h3>
         <h1 className="h1">Bahujan</h1>
         <h1 className="h1">Voices 2022</h1>
-        <p>Essay and Poetry Anthology​</p>
+        <p>
+          An anthology of personal and narrative essays and poetry from our
+          community sharing who they are and what they would like the world to
+          know about them. Honest authentic expression!
+        </p>
 
         <button className="btn-second margin-top-2">Coming Soon</button>
       </div>

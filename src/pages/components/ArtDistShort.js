@@ -15,9 +15,8 @@ const ArtDistShort = () => {
         <h1 className="h1 t-align-r">Art2022</h1>
         <h1 className="h1"></h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quo
-          dicta, recusandae quis unde id dolor cumque distinctio odio numquam
-          velit dolorum.
+          An initiative to recognize and applaud artists from the Bahujan
+          Community for their artistic endeavors and various ways of expression!
         </p>
 
         <button className="btn-second margin-top-2">Coming Soon</button>
