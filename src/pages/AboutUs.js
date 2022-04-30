@@ -58,6 +58,7 @@ const AboutUs = () => {
             {contacts.map((contact, index) => {
               return (
                 <span>
+                  <br />
                   <a
                     href={contact.url}
                     className="contactLinks"
@@ -68,7 +69,6 @@ const AboutUs = () => {
                     <contact.icon className=".footer-content-icon" />
                     {contact.channel}
                   </a>
-                  <br />
                 </span>
               );
             })}

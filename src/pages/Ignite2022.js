@@ -134,7 +134,7 @@ const Ignite2022 = ({ userType }) => {
               <br /> If all the Zoom related categories are full please select
               YouTube Live Category
               <br />
-              <br /> <b>YouTube Live:</b>(no limit)
+              <br /> <b>YouTube Live:</b> 50 Students
               <br />
               We will have a dedicated host and modrator intracting with YouTube
               Live Attendees so rest assured we'll do everything we can to make

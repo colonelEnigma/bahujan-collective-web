@@ -24,7 +24,7 @@ const Projects = () => {
               }}
               style={{ cursor: "pointer" }}
             >
-              Ignite 22
+              Ignite 2022
             </h1>
             <p
               onClick={() => {
@@ -50,7 +50,7 @@ const Projects = () => {
             </p>
           </TextCard>
           <TextCard style={tCardStyle}>
-            <h1>Bahujan Art 2022</h1>
+            <h1>Bahujan Canvas 2022: Art Anthology</h1>
             <p>
               Art and Artist Anthology (Additional Details will be published
               soon)
@@ -100,8 +100,8 @@ const Projects = () => {
         <h1 style={xlH1}>Past Projects</h1>
         <div className="projects-grid">
           <TextCard style={tCardStyle}>
-            <h1>Writing Workshop</h1>
-            <p>Ignite 2021</p>
+            <h1>Ignite 2021</h1>
+            <p>Writing workshop</p>
           </TextCard>
           <TextCard style={tCardStyle}>
             <h1>Audiobooks</h1>
@@ -122,7 +122,7 @@ const Projects = () => {
                 }}
                 style={{ cursor: "pointer" }}
               >
-                The Essence of Buddhism​
+                <b>The Essence of Buddhism</b>
               </span>
             </p>
           </TextCard>

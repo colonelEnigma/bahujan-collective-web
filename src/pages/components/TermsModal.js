@@ -40,30 +40,33 @@ const TermsModal = ({ setUser }) => {
 
         <p className="font-sm">
           This platform currently only has projects for participation by Bahujan
-          Community Members.​
+          Community Members.
         </p>
         <p className="font-sm">
-          By Bahujan Community Members – we mean that you identify as being from
+          By Bahujan Community Members - we mean that you identify as being from
           one of the oppressed caste communities broadly identified as SC, ST,
           OBC, or are from one of these oppressed caste communities but you or
           your ancestors have since converted and are part of other religious
-          minorities.​ ​
+          minorities.
         </p>
         <p className="font-sm">
           This also includes Mandal Excluded OBC with Ambedkarite ideology, who
           are sometimes referred to as Dominant Castes (but are not from the
-          Brahmin, Kshatriya or Vaishya Castes). ​
+          Brahmin, Kshatriya or Vaishya Castes).
         </p>
         <p className="font-sm">
           Bahujan Community Members can be of any nationality across the Indian
-          Subcontinent and maybe residing in any part of the world.​ You are all
-          family and you are welcome to register and participate.​ ​
+          Subcontinent and maybe residing in any part of the world. You are all
+          family and you are welcome to register and participate.
         </p>
         <p className="font-sm">
-          Finally, we trust you when you identifying as belonging to the Bahujan
-          Community (or not) – we do not ask or require proof of caste.​
+          Finally, we trust you when you say that you identify as
+          <br />
         </p>
-        <p className="font-sm">Please check the appropriate box to proceed.​</p>
+        <p className="font-sm">
+          *Please check the appropriate box to proceed.
+          <br />
+        </p>
         <div className="check-box " style={{ justifyContent: "flex-start" }}>
           <input
             className="checkbox-input"
