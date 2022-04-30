@@ -21,7 +21,7 @@ export const contacts = [
     url: "https://www.youtube.com/user/KnowRealIndia",
     icon: AiOutlineYoutube,
   },
-  { channel: "FaceBook", url: "", icon: FiFacebook },
+  // { channel: "FaceBook", url: "", icon: FiFacebook },
   {
     channel: "Mail",
     url: "mailto:opsmanager.bahujancollective@gmail.com",

@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 const heroBg = {
   1: {
     backgroundImage:
@@ -63,6 +64,7 @@ const heroBg = {
 };
 
 const Hero = () => {
+  const naviate = useNavigate();
   return (
     <div className="hero" style={heroBg[1]}>
       <h1 className="xxl-h1">Ignite 2022</h1>
@@ -75,11 +77,21 @@ const Hero = () => {
         <b> Note :</b> No prior writing experience needed, however working
         knowledge of the English Language is needed.
       </p>
-      <button className="btn-prime shodow" style={{ marginTop: "20px" }}>
+      <button
+        className="btn-prime shodow"
+        onClick={() => {
+          naviate("/ignite-2022");
+        }}
+        style={{ marginTop: "20px" }}
+      >
         <Link
-          style={{ color: "white", textDecoration: "none" }}
+          style={{
+            color: "white",
+            textDecoration: "none",
+          }}
           to="/ignite-2022"
         >
+          <span></span>
           IGNITE 2022
         </Link>
       </button>

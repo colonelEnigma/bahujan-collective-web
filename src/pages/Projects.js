@@ -83,7 +83,7 @@ const Projects = () => {
         <h1 style={xlH1}>2023 and Beyond</h1>
         <div className="projects-grid">
           <TextCard style={tCardStyle}>
-            <h1>BAWS Abridged Volumes</h1>
+            <h1>Babasaheb Ambedkar Writings and Speeches Abridged Volumes</h1>
             <p>Community Sourced Project – kickoff in Spring 2023</p>
           </TextCard>
           <TextCard style={tCardStyle}>
