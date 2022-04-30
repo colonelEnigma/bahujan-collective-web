@@ -35,7 +35,7 @@ const IgniteEvents = [
   },
   {
     title: "Session #3",
-    date: "Sunday, May 15th ",
+    date: "Sunday, May 22th ",
     time: "9AM to 11AM(IST)",
     status: "future",
     RegLink: "",
@@ -47,7 +47,7 @@ const IgniteEvents = [
   },
   {
     title: "Session #4",
-    date: "Sunday, May 15th ",
+    date: "Sunday, May 29th ",
     time: "9AM to 11AM(IST)",
     status: "future",
     RegLink: "",
