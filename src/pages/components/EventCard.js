@@ -24,16 +24,16 @@ const EventCard = ({ userType, event }) => {
           <p>
             <b>{event.time}</b>
           </p>
+          <ul className="event-description">
+            {event.description.map((desc, index) => {
+              return (
+                <li key={index}>
+                  <p>{desc}</p>
+                </li>
+              );
+            })}
+          </ul>
         </div>
-        <ul className="event-description">
-          {event.description.map((desc, index) => {
-            return (
-              <li key={index}>
-                <p>{desc}</p>
-              </li>
-            );
-          })}
-        </ul>
         <div className="event-card-action">
           {!event.RecoLink && event.RegLink && (
             <a
