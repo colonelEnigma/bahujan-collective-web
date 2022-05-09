@@ -10,7 +10,6 @@ const bgColor = {
 const cssColorBlk = { color: "black" };
 
 const EventCard = ({ userType, event }) => {
-  console.log(`status>> ${event.status} ${bgColor[event.status]}`);
   return (
     <div
       className="event-card"
@@ -51,15 +50,12 @@ const EventCard = ({ userType, event }) => {
                     }
               }
             >
-              <span>
-                {console.log(userType)}
-                {userType === BAHUJAN ? "Register" : "Bahujan Only"}
-              </span>
+              <span>{userType === BAHUJAN ? "Register" : "Bahujan Only"}</span>
             </a>
           )}
           {event.RecoLink && event.RegLink && (
             <a href={event.RecoLink} target="_blank" rel="noopener noreferrer">
-              <span>Request Recording</span>
+              <span>Closed</span>
             </a>
           )}
         </div>

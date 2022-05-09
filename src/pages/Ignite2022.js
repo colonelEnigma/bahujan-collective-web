@@ -13,7 +13,7 @@ const IgniteEvents = [
     status: "current",
     RegLink:
       "https://www.eventbrite.com/e/ignite-2022-session-1-tickets-327645535617",
-    RecoLink: "",
+    RecoLink: "adad",
     description: [
       "Workshop overview. Warm up activities.",
       "Introduction to personal essay. In session writing.",
