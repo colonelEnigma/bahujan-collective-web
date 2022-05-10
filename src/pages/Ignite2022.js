@@ -99,7 +99,9 @@ const Ignite2022 = ({ userType }) => {
               <br />
               <br />
               <b>Note:</b> No prior writing experience is required. However,
-              working knowledge of English is necessary.
+              working knowledge of English is necessary. <br />
+              *New applicants can access link for the recording of prior
+              session(s) provided upon registration for current session.
             </p>
           </TextCard>
           <TextCard style={{ padding: "25px 20px" }}>
