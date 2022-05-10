@@ -10,7 +10,7 @@ const IgniteEvents = [
     title: "Session #1",
     date: "Sunday, May 8th ",
     time: "9AM to 11AM (IST)",
-    status: "current",
+    status: "past",
     RegLink:
       "https://www.eventbrite.com/e/ignite-2022-session-1-tickets-327645535617",
     RecoLink: "adad",
@@ -24,9 +24,9 @@ const IgniteEvents = [
     title: "Session #2",
     date: "Sunday, May 15th ",
     time: "9AM to 11AM(IST)",
-    status: "future",
-    RegLink: "",
-    // https://www.eventbrite.com/e/ignite-2022-session-2-tickets-336214977047
+    status: "current",
+    RegLink:
+      "https://www.eventbrite.com/e/ignite-2022-session-2-tickets-336214977047",
     RecoLink: "",
     description: [
       "Personal essay and Intro to narrative essay.",

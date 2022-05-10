@@ -4,7 +4,7 @@ import "./EventCard.css";
 const bgColor = {
   future: "hsla(213, 97%, 87%, 1)",
   current: " hsla(141, 79%, 85%, 1)",
-  past: " hsla(141, 79%, 85%, 1)",
+  past: " hsla(53, 98%, 77%, 1)",
 };
 
 const cssColorBlk = { color: "black" };
