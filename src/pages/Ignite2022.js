@@ -25,8 +25,8 @@ const IgniteEvents = [
     date: "Sunday, May 15th ",
     time: "9AM to 11AM(IST)",
     status: "future",
-    RegLink:
-      "https://www.eventbrite.com/e/ignite-2022-session-2-tickets-336214977047",
+    RegLink: "",
+    // https://www.eventbrite.com/e/ignite-2022-session-2-tickets-336214977047
     RecoLink: "",
     description: [
       "Personal essay and Intro to narrative essay.",
