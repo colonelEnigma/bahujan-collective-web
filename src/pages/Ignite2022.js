@@ -11,9 +11,8 @@ const IgniteEvents = [
     date: "Sunday, May 8th ",
     time: "9AM to 11AM (IST)",
     status: "past",
-    RegLink:
-      "https://www.eventbrite.com/e/ignite-2022-session-1-tickets-327645535617",
-    RecoLink: "adad",
+    RegLink: "",
+    RecoLink: "",
     description: [
       "Workshop overview. Warm up activities.",
       "Introduction to personal essay. In session writing.",
@@ -32,6 +31,10 @@ const IgniteEvents = [
       "Personal essay and Intro to narrative essay.",
       "Discussion of Bahujan and African American literary voices. In session writing.",
       "Homework: Narrative essay assignment.",
+      <span>
+        <b>Note : </b> New applicants will be provided with recording of prior
+        session(s).
+      </span>,
     ],
   },
   {
@@ -44,6 +47,10 @@ const IgniteEvents = [
     description: [
       "Poetic expressions. Poetry styles: Pantoum and life reflection.",
       "Homework: Poetry one in each style",
+      <span>
+        <b>Note : </b> New applicants will be provided with recording of prior
+        session(s).
+      </span>,
     ],
   },
   {
@@ -56,6 +63,10 @@ const IgniteEvents = [
     description: [
       "Narrative essay. Developing and expanding with elements of story. In  session writing and revision feedback.",
       "Homework: Continue working on the essay and poetry piece for submission",
+      <span>
+        <b>Note : </b> New applicants will be provided with recording of prior
+        session(s).
+      </span>,
     ],
   },
 ];
@@ -100,8 +111,6 @@ const Ignite2022 = ({ userType }) => {
               <br />
               <b>Note:</b> No prior writing experience is required. However,
               working knowledge of English is necessary. <br />
-              *New applicants can access link for the recording of prior
-              session(s) provided upon registration for current session.
             </p>
           </TextCard>
           <TextCard style={{ padding: "25px 20px" }}>
