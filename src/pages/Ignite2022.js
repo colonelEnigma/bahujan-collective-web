@@ -23,26 +23,26 @@ const IgniteEvents = [
     title: "Session #2",
     date: "Sunday, May 15th ",
     time: "9AM to 11AM(IST)",
-    status: "current",
-    RegLink:
-      "https://www.eventbrite.com/e/ignite-2022-session-2-tickets-336214977047",
+    status: "past",
+    RegLink: "",
     RecoLink: "",
     description: [
       "Personal essay and Intro to narrative essay.",
       "Discussion of Bahujan and African American literary voices. In session writing.",
       "Homework: Narrative essay assignment.",
-      <span>
-        <b>Note : </b> New applicants will be provided with recording of prior
-        session(s).
-      </span>,
+      // <span>
+      //   <b>Note : </b> New applicants will be provided with recording of prior
+      //   session(s).
+      // </span>,
     ],
   },
   {
     title: "Session #3",
     date: "Sunday, May 22th ",
     time: "9AM to 11AM(IST)",
-    status: "future",
-    RegLink: "",
+    status: "current",
+    RegLink:
+      "https://www.eventbrite.com/e/ignite-2022-session-3-back-to-basics-tickets-341383446077",
     RecoLink: "",
     description: [
       "Poetic expressions. Poetry styles: Pantoum and life reflection.",
