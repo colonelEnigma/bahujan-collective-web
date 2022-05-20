@@ -45,8 +45,9 @@ const IgniteEvents = [
       "https://www.eventbrite.com/e/ignite-2022-session-3-back-to-basics-tickets-341383446077",
     RecoLink: "",
     description: [
-      "Poetic expressions. Poetry styles: Pantoum and life reflection.",
-      "Homework: Poetry one in each style",
+      "Fundamentals of standard essay.",
+      "Understanding the basics.",
+      "Homework: Review and revise Personal Essay",
       <span>
         <b>Note : </b> New applicants will be provided with recording of prior
         session(s).
@@ -61,8 +62,30 @@ const IgniteEvents = [
     RegLink: "",
     RecoLink: "",
     description: [
-      "Narrative essay. Developing and expanding with elements of story. In  session writing and revision feedback.",
+      "Basic, personal and narrative essay review.",
+      "Developing and expanding with elements of story.",
       "Homework: Continue working on the essay and poetry piece for submission",
+      "In session writing and revision feedback.",
+      "Homework: Continue working on personal essay",
+      <span>
+        <b>Note : </b> New applicants will be provided with recording of prior
+        session(s).
+      </span>,
+    ],
+  },
+  {
+    title: "Session #5",
+    date: "Sunday, June 5th",
+    time: "9AM to 11AM(IST)",
+    status: "future",
+    RegLink: "",
+    RecoLink: "",
+    description: [
+      "Poetic expressions.",
+      "Poetry styles: Pantoum and life reflection.",
+      "Homework: Poetry one in each style.",
+      "In session writing and revision feedback.",
+      "Homework: Continue working on personal essay",
       <span>
         <b>Note : </b> New applicants will be provided with recording of prior
         session(s).

@@ -42,7 +42,7 @@
     justify-items:start;
     align-content: center;
     padding-inline: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 @media screen and (min-width: 768px) {
@@ -54,5 +54,7 @@
     }
     .ignite-content-left{
         /* width: 50%; */
+    }
+    .session-grid{
     }
 }
