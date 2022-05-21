@@ -64,7 +64,7 @@ const IgniteEvents = [
     description: [
       "Basic, personal and narrative essay review.",
       "Developing and expanding with elements of story.",
-      "Homework: Continue working on the essay and poetry piece for submission",
+
       "In session writing and revision feedback.",
       "Homework: Continue working on personal essay",
       <span>
@@ -84,8 +84,7 @@ const IgniteEvents = [
       "Poetic expressions.",
       "Poetry styles: Pantoum and life reflection.",
       "Homework: Poetry one in each style.",
-      "In session writing and revision feedback.",
-      "Homework: Continue working on personal essay",
+
       <span>
         <b>Note : </b> New applicants will be provided with recording of prior
         session(s).
