@@ -40,26 +40,26 @@ const IgniteEvents = [
     title: "Session #3",
     date: "Sunday, May 22th ",
     time: "9AM to 11AM(IST)",
-    status: "current",
-    RegLink:
-      "https://www.eventbrite.com/e/ignite-2022-session-3-back-to-basics-tickets-341383446077",
+    status: "past",
+    RegLink: "",
     RecoLink: "",
     description: [
       "Fundamentals of standard essay.",
       "Understanding the basics.",
       "Homework: Review and revise Personal Essay",
-      <span>
-        <b>Note : </b> New applicants will be provided with recording of prior
-        session(s).
-      </span>,
+      // <span>
+      //   <b>Note : </b> New applicants will be provided with recording of prior
+      //   session(s).
+      // </span>,
     ],
   },
   {
     title: "Session #4",
     date: "Sunday, May 29th ",
     time: "9AM to 11AM(IST)",
-    status: "future",
-    RegLink: "",
+    status: "current",
+    RegLink:
+      "https://www.eventbrite.com/e/ignite-2022-session-4-essay-writing-concluding-class-tickets-346368566707",
     RecoLink: "",
     description: [
       "Basic, personal and narrative essay review.",
