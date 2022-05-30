@@ -1,7 +1,6 @@
 import EventCard from "./components/EventCard";
 import TextCard from "./components/TextCard";
 import "./Ignite2022.css";
-const igniteContent = { h: "About", p: "" };
 
 // Todo: time string to time object and to local timing and changing comopnent according to time
 
@@ -57,9 +56,8 @@ const IgniteEvents = [
     title: "Session #4",
     date: "Sunday, May 29th ",
     time: "9AM to 11AM(IST)",
-    status: "current",
-    RegLink:
-      "https://www.eventbrite.com/e/ignite-2022-session-4-essay-writing-concluding-class-tickets-346368566707",
+    status: "past",
+    RegLink: "",
     RecoLink: "",
     description: [
       "Basic, personal and narrative essay review.",
@@ -67,18 +65,19 @@ const IgniteEvents = [
 
       "In session writing and revision feedback.",
       "Homework: Continue working on personal essay",
-      <span>
-        <b>Note : </b> New applicants will be provided with recording of prior
-        session(s).
-      </span>,
+      // <span>
+      //   <b>Note : </b> New applicants will be provided with recording of prior
+      //   session(s).
+      // </span>,
     ],
   },
   {
     title: "Session #5",
     date: "Sunday, June 5th",
     time: "9AM to 11AM(IST)",
-    status: "future",
-    RegLink: "",
+    status: "current",
+    RegLink:
+      "https://www.eventbrite.com/e/-2022-session-5-poetic-expressions-tickets-352124894037",
     RecoLink: "",
     description: [
       "Poetic expressions.",
